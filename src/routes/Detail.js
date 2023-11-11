@@ -20,7 +20,7 @@ function Detail(){
             <p>{movie.summary}</p>
             <a href={movie.url}>{movie.url}</a>
             <ul>
-                {movie.genres.map((g)=><li key={g}>{g}</li>)}
+                {movie && movie.genres.map((g)=><li key={g}>{g}</li>)}
             </ul>
         </div>
         
