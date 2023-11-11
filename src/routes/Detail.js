@@ -19,9 +19,9 @@ function Detail(){
             <img src={movie.medium_cover_image} />
             <p>{movie.summary}</p>
             <a href={movie.url}>{movie.url}</a>
-            <ul>
+            {/* <ul>
                 {movie && movie.genres.map((g)=><li key={g}>{g}</li>)}
-            </ul>
+            </ul> */}
         </div>
         
     )
