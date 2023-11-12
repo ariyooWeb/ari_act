@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/ari_act/static/css/main.305de763.css",
-    "main.js": "/ari_act/static/js/main.b6c7a8f8.js",
+    "main.css": "/ari_act/static/css/main.1041e1ca.css",
+    "main.js": "/ari_act/static/js/main.7fa382d5.js",
     "static/media/slick.svg": "/ari_act/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/ari_act/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/ari_act/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/ari_act/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/ari_act/index.html",
-    "main.305de763.css.map": "/ari_act/static/css/main.305de763.css.map",
-    "main.b6c7a8f8.js.map": "/ari_act/static/js/main.b6c7a8f8.js.map"
+    "main.1041e1ca.css.map": "/ari_act/static/css/main.1041e1ca.css.map",
+    "main.7fa382d5.js.map": "/ari_act/static/js/main.7fa382d5.js.map"
   },
   "entrypoints": [
-    "static/css/main.305de763.css",
-    "static/js/main.b6c7a8f8.js"
+    "static/css/main.1041e1ca.css",
+    "static/js/main.7fa382d5.js"
   ]
 }
