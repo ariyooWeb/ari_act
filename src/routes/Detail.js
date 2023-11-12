@@ -18,8 +18,9 @@ function Detail(){
     },[])
     return(
         <div>
-            <Header />
+            
             <div className={styles.container}>
+            <Header />
                 <div>
                     <img src={movie.large_cover_image} className={styles.cover}/>
                 </div>
@@ -31,8 +32,9 @@ function Detail(){
                     <div className={styles.arrow}>movie website▼</div>
                     <a href={movie.url} className={styles.url}>{movie.url}</a>
                 </div>
+                <Footer />
             </div>
-            <Footer />
+            
         </div>
         
         

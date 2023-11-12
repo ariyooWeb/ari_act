@@ -1,6 +1,8 @@
 
 
 .container {
+    width:100vw;
+    height:100vh;
     display:flex;
     text-align:center;
     padding:100px 30px 20px;
@@ -69,3 +71,47 @@
     line-height:1.5;
     opacity:0.8;
 }
+
+@media screen and (max-width: 720px) {
+    .container {
+        display:block;
+        padding:60px 0 0;
+        width:100%;
+    }
+    
+    .cover {
+        height: calc(100vh - 60px);
+    }
+    
+    .contents {
+        width:100%;
+        padding:25px 0;
+    }
+    
+    .title {
+        font-size:22px;
+        letter-spacing: normal;
+        margin-bottom: 10px;
+    }
+    
+    .year {
+        font-size:13px;
+        margin-bottom:15px;
+    }
+    
+    .genres {
+        margin-bottom:20px;
+    }
+    
+    .desc {
+        width:90%;
+        margin-bottom:20px;
+        font-size:12px;
+    }
+    
+    .arrow {
+        animation:none;
+        margin:10px 0;
+    }
+
+  }
