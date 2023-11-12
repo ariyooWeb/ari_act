@@ -28,8 +28,6 @@ function Detail(){
                     <p className={styles.year}><span>{movie.year}년</span> | <span>{movie.runtime}분</span></p>
                     <div className={styles.genres}>{movie.genres && movie.genres.map((g,index)=><span key={g}>{index==0? null : "/"}{g}</span>)}</div>
                     <p className={styles.desc}>{movie.description_full}</p>
-                    <div className={styles.arrow}>movie website▼</div>
-                    <a href={movie.url} className={styles.url}>{movie.url}</a>
                 </div>
             </div>
             <Footer />

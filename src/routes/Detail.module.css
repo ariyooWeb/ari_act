@@ -49,32 +49,6 @@
     line-height:1.5;
 }
 
-.arrow {
-    margin:20px 0;
-    animation-duration: 2s;
-    animation-name: updown;
-    animation-iteration-count: infinite;
-}
-
-@keyframes updown {
-    from {
-        margin-bottom:15px;
-    }
-
-    50% {
-        margin-bottom:25px;
-    }
-    to {
-        margin-bottom:15px;
-    }
-}
-
-.url {
-    color:#fff;
-    line-height:1.5;
-    opacity:0.8;
-}
-
 @media screen and (max-width: 720px) {
 
     .flex {
@@ -114,11 +88,6 @@
         width:90%;
         margin-bottom:20px;
         font-size:12px;
-    }
-    
-    .arrow {
-        animation:none;
-        margin:10px 0;
     }
 
   }
