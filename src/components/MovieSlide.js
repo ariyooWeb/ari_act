@@ -14,6 +14,29 @@ function MovieSlide({param,sort}){
         speed: 500, // 슬라이드 넘길 때 속도
         autoplay: true, // 슬라이드를 자동으로 넘길지 여부
         autoplaySpeed: 3000, // 자동으로 넘길 시 시간 간격
+        responsive: [
+            {
+                breakpoint: 1440,
+                settings: {
+                    slidesToShow: 6,
+                    slidesToScroll: 6
+                }
+            },
+            {
+                breakpoint: 720,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+        ]
       }
     const [movies, setMovies] = useState([]);
     const getMovies = async() => {

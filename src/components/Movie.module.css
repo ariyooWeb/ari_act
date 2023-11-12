@@ -7,11 +7,7 @@
     color: inherit;
     font-family: 'Poppins', sans-serif;
   }
-  
-  .movie__img {
-    width: 100%;
-  }
-  
+
   .movie__title,
   .movie__year {
     margin: 0;
