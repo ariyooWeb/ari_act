@@ -3,12 +3,15 @@
 .container {
     width:100vw;
     height:100vh;
+}
+
+.flex {
     display:flex;
-    text-align:center;
     padding:100px 30px 20px;
     width:60%;
     margin:0 auto;
     color:#fff;
+    text-align:center;
 }
 
 .cover {
@@ -16,14 +19,14 @@
 }
 
 .contents {
-    width:50%;
+    width:60%;
     padding:0 30px;
 }
 
 .title {
     font-size:32px;
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     line-height:1.5;
     margin-bottom: 15px;
 }
@@ -39,7 +42,7 @@
 }
 
 .desc {
-    width:300px;
+    width:400px;
     margin:0 auto;
     margin-bottom:30px;
     font-size:14px;
@@ -73,10 +76,14 @@
 }
 
 @media screen and (max-width: 720px) {
-    .container {
+
+    .flex {
         display:block;
         padding:60px 0 0;
         width:100%;
+        margin:0 auto;
+        color:#fff;
+        text-align:center;
     }
     
     .cover {

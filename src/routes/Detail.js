@@ -17,10 +17,9 @@ function Detail(){
         getMovie();
     },[])
     return(
-        <div>
-            
-            <div className={styles.container}>
+        <div className={styles.container}>
             <Header />
+            <div className={styles.flex}>
                 <div>
                     <img src={movie.large_cover_image} className={styles.cover}/>
                 </div>
@@ -32,12 +31,9 @@ function Detail(){
                     <div className={styles.arrow}>movie website▼</div>
                     <a href={movie.url} className={styles.url}>{movie.url}</a>
                 </div>
-                <Footer />
             </div>
-            
+            <Footer />
         </div>
-        
-        
     )
 }
 export default Detail;
