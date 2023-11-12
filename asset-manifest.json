@@ -1,10 +1,17 @@
 {
   "files": {
-    "main.js": "/ari_act/static/js/main.7c3353d3.js",
+    "main.css": "/ari_act/static/css/main.69f93f22.css",
+    "main.js": "/ari_act/static/js/main.6407211b.js",
+    "static/media/slick.svg": "/ari_act/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/ari_act/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/ari_act/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/ari_act/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/ari_act/index.html",
-    "main.7c3353d3.js.map": "/ari_act/static/js/main.7c3353d3.js.map"
+    "main.69f93f22.css.map": "/ari_act/static/css/main.69f93f22.css.map",
+    "main.6407211b.js.map": "/ari_act/static/js/main.6407211b.js.map"
   },
   "entrypoints": [
-    "static/js/main.7c3353d3.js"
+    "static/css/main.69f93f22.css",
+    "static/js/main.6407211b.js"
   ]
 }
