@@ -1,3 +1,8 @@
+body {
+  overflow-x:hidden;
+  background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+}
+
 .container {
     height: 100%;
     padding-top:100px;
@@ -26,12 +31,28 @@
 }
 
 .movies {
-  width:1200px;
+  max-width:1200px;
   padding: 15px 0;
   padding-top: 10px;
   margin:0 auto;
 }
 
-/* @media screen and (max-width: 1090px) {
+@media screen and (max-width: 720px) {
+  .container {
+    padding-top:60px;
+  }
+  
+.loader {
+  font-size:15px;
+}
 
-} */
+.subTitle {
+  padding-top:0;
+  padding-left:8px;
+  font-size:14px;
+}
+
+  .movies {
+    width:100%;
+  }
+}

@@ -7,7 +7,11 @@
     color: inherit;
     font-family: 'Poppins', sans-serif;
   }
-
+  
+  .movie__img {
+    width: 100%;
+  }
+  
   .movie__title,
   .movie__year {
     margin: 0;
@@ -21,6 +25,8 @@
     color: #fff;
     text-decoration: none;
     font-weight: 700;
+    line-height:1.5;
+    letter-spacing: 1.2px;
   }
   
   .movie__genres li,
@@ -29,4 +35,22 @@
     font-size: 14px;
     color:#fff;
     opacity:0.6;
+  }
+
+  @media screen and (max-width: 720px) {
+    .movie {
+      padding: 10px;
+    }
+    
+    .movie__title {
+      margin: 5px 0;
+      font-size: 12px;
+    }
+    
+    .movie__genres li,
+    .movie__year {
+      margin-bottom: 5px;
+      font-size: 11px;
+    }
+  
   }

@@ -6,12 +6,12 @@ function Movie({id, year, coverImg, title, summary, genres, date}){
     <div className={styles.movie}>
       <Link to={`/movie/${id}`}><div><img src={coverImg} alt={title} className={styles.movie__img} /></div></Link>
       <div>
-          <h2 className={styles.movie__title}>{title}</h2>
+          <h2 className={styles.movie__title}>{title.length > 25 ? `${title.slice(0,25)}...` : title}</h2>
           {/* <h3 className={styles.movie__year}>{year}</h3>
           <h4>{date}</h4> */}
           {/* <p>{summary.length > 235 ? `${summary.slice(0, 235)}...` : summary}</p> */}
           <ul className={styles.movie__genres}>
-            {genres && genres.map((g) => <li key={id}>{g}</li>)}
+            {genres && genres.map((g,index) => <li key={id}>{index > 2 ? "" : g}</li>)}
           </ul>
       </div>
     </div>

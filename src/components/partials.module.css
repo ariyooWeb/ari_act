@@ -37,3 +37,30 @@
 .information p {
     margin-bottom:10px;
 }
+
+@media screen and (max-width: 720px) {
+    .header {
+        padding:10px 15px;
+    }
+    
+    .logo {
+        width:50px;
+    }
+    
+    .footer {
+        padding:20px;
+    }
+    
+    .information {
+        font-size:11px;
+    }
+    
+    .footerTitle {
+        font-size:13px;
+        margin-bottom:10px;
+    }
+    
+    .information p {
+        margin-bottom:5px;
+    }
+  }

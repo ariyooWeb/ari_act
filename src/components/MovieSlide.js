@@ -19,21 +19,18 @@ function MovieSlide({param,sort}){
                 breakpoint: 1440,
                 settings: {
                     slidesToShow: 6,
-                    slidesToScroll: 6
                 }
             },
             {
                 breakpoint: 720,
                 settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3
+                    slidesToShow: 4,
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToShow: 3,
                 }
             },
         ]
