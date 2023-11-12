@@ -1,0 +1,73 @@
+body {
+    background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+}
+
+.container {
+    display:flex;
+    text-align:center;
+    padding:50px 30px;
+    width:60%;
+    margin:0 auto;
+    color:#fff;
+}
+
+.cover {
+    height: 90vh;
+}
+
+.contents {
+    width:50%;
+    padding:0 30px;
+}
+
+.title {
+    font-size:32px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height:1.5;
+    margin-bottom: 15px;
+}
+
+.year {
+    font-size:16px;
+    margin-bottom:30px;
+}
+
+.genres {
+    opacity: 0.5;
+    margin-bottom:40px;
+}
+
+.desc {
+    width:300px;
+    margin:0 auto;
+    margin-bottom:30px;
+    font-size:18px;
+    line-height:1.5;
+}
+
+.arrow {
+    margin:20px 0;
+    animation-duration: 2s;
+    animation-name: updown;
+    animation-iteration-count: infinite;
+}
+
+@keyframes updown {
+    from {
+        margin-bottom:15px;
+    }
+
+    50% {
+        margin-bottom:25px;
+    }
+    to {
+        margin-bottom:15px;
+    }
+}
+
+.url {
+    color:#fff;
+    line-height:1.5;
+    opacity:0.5;
+}

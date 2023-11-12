@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import {useParams} from "react-router-dom";
+import styles from "./Detail.module.css";
+import Header from "../components/Header";
 function Detail(){
     const {id} = useParams();
     const [movie, setMovie] = useState([]);
@@ -15,14 +17,22 @@ function Detail(){
     },[])
     return(
         <div>
-            <h1>{movie.title}</h1>
-            <img src={movie.medium_cover_image} />
-            <p>{movie.summary}</p>
-            <a href={movie.url}>{movie.url}</a>
-            {/* <ul>
-                {movie && movie.genres.map((g)=><li key={g}>{g}</li>)}
-            </ul> */}
+            <Header />
+            <div className={styles.container}>
+                <div>
+                    <img src={movie.large_cover_image} className={styles.cover}/>
+                </div>
+                <div className={styles.contents}>
+                    <h1 className={styles.title}>{movie.title}</h1>
+                    <p className={styles.year}><span>{movie.year}년</span> | <span>{movie.runtime}분</span></p>
+                    <div className={styles.genres}>{movie.genres && movie.genres.map((g,index)=><span key={g}>{index==0? null : "/"}{g}</span>)}</div>
+                    <p className={styles.desc}>{movie.description_full}</p>
+                    <div className={styles.arrow}>movie website▼</div>
+                    <a href={movie.url} className={styles.url}>{movie.url}</a>
+                </div>
+            </div>
         </div>
+        
         
     )
 }

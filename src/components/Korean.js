@@ -1,14 +1,10 @@
 import {useState, useEffect} from "react";
-import Movie from "../components/Movie";
-import styles from "./Home.module.css";
-import Header from "../components/Header";
-import Popularity from "../components/Popularity";
-import Korean from "../components/Korean";
-import Family from "../components/Family";
+import Movie from "./Movie";
+import styles from "../routes/Home.module.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-function Home(){
+function Korean(){
     const settings = {
         arrows: true, // 양 끝 화살표 생성여부
         dots: false, // 슬라이더 아래에 슬라이드 개수를 점 형태로 표시
@@ -23,7 +19,7 @@ function Home(){
     const [movies, setMovies] = useState([]);
     const getMovies = async() => {
     const json = await(
-        await fetch(`https://yts.mx/api/v2/list_movies.json?minimum_rating=8.8`)
+        await fetch(`https://yts.mx/api/v2/list_movies.json?genre=Romance`)
         ).json();
         setMovies(json.data.movies);
         setLoading(false);
@@ -33,12 +29,8 @@ function Home(){
         getMovies()
     },[]);
     return(
-        <div className={styles.container}>
-        {loading? 
-        <h1 className={styles.loader}>loading...</h1>:
         <div>
-            <Popularity />
-            <h1 className={styles.subTitle}>최신순</h1>
+            <h2 className={styles.subTitle}>로맨스</h2>
             <div className={styles.movies}>
                 <Slider {...settings}>
                     {movies.map((movie,index) =>
@@ -46,13 +38,10 @@ function Home(){
                     )}
                 </Slider>
             </div>
-            <Korean />
-            <Family />
         </div>
-        }
-        </div>
+        
     )
 }
 
 
-export default Home;
+export default Korean;

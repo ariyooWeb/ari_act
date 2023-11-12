@@ -1,0 +1,33 @@
+.movie {
+    font-weight: 300;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .movie__img {
+    width: 100%;
+  }
+  
+  .movie__title,
+  .movie__year {
+    margin: 0;
+    font-weight: 300;
+    text-decoration: none;
+  }
+  
+  .movie__title {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  
+  .movie__genres li,
+  .movie__year {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color:#fff;
+  }
