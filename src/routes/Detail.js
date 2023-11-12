@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import {useParams} from "react-router-dom";
 import styles from "./Detail.module.css";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 function Detail(){
     const {id} = useParams();
     const [movie, setMovie] = useState([]);
@@ -31,6 +32,7 @@ function Detail(){
                     <a href={movie.url} className={styles.url}>{movie.url}</a>
                 </div>
             </div>
+            <Footer />
         </div>
         
         

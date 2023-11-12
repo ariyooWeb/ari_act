@@ -4,7 +4,7 @@ import styles from "../routes/Home.module.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-function Popularity(){
+function MovieSlide({param,sort}){
     const settings = {
         arrows: true, // 양 끝 화살표 생성여부
         dots: false, // 슬라이더 아래에 슬라이드 개수를 점 형태로 표시
@@ -15,14 +15,12 @@ function Popularity(){
         autoplay: true, // 슬라이드를 자동으로 넘길지 여부
         autoplaySpeed: 3000, // 자동으로 넘길 시 시간 간격
       }
-    const [loading, setLoading] = useState(true);
     const [movies, setMovies] = useState([]);
     const getMovies = async() => {
     const json = await(
-        await fetch(`https://yts.mx/api/v2/list_movies.json?minimum_rating=8.8&sort_by=download_count`)
+        await fetch(`https://yts.mx/api/v2/list_movies.json?${param}`)
         ).json();
         setMovies(json.data.movies);
-        setLoading(false);
         console.log(movies)
     }
     useEffect(()=> {
@@ -30,8 +28,8 @@ function Popularity(){
     },[]);
     return(
         <div>
-            <h2 className={styles.subTitle}>인기순</h2>
             <div className={styles.movies}>
+                <h2 className={styles.subTitle}>{sort}</h2>
                 <Slider {...settings}>
                     {movies.map((movie,index) =>
                     (<Movie key={index} id={movie.id} year={movie.year} coverImg={movie.medium_cover_image} title={movie.title} summary={movie.summary} genres={movie.genres} date={movie.date_uploaded}/>)
@@ -43,4 +41,4 @@ function Popularity(){
     )
 }
 
-export default Popularity;
+export default MovieSlide;

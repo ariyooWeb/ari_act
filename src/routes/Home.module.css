@@ -1,7 +1,9 @@
 .container {
     height: 100%;
-    display: flex;
-    justify-content: center;
+    padding-top:100px;
+    /* display: flex;
+    justify-content: center; */
+    width:100vw;
   }
   
 .loader {
@@ -11,6 +13,8 @@
   justify-content: center;
   align-items: center;
   font-weight: 300;
+  color:#fff;
+  font-size:30px;
 }
 
 .subTitle {
@@ -23,12 +27,11 @@
 
 .movies {
   width:1200px;
-  padding: 30px 0 20px 0;
+  padding: 15px 0;
   padding-top: 10px;
+  margin:0 auto;
 }
 
-@media screen and (max-width: 1090px) {
-  .movies {
-    width:200px;
-  }
-}
+/* @media screen and (max-width: 1090px) {
+
+} */
